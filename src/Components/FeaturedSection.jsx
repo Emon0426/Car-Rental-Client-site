@@ -1,8 +1,8 @@
-import React from 'react';
-import Title from './Title';
-import { assets, dummyCarData } from '../assets/assets';
-import CarCard from './CarCard';
-import { useNavigate } from 'react-router-dom';
+import React from "react";
+import Title from "./Title";
+import { assets, dummyCarData } from "../assets/assets";
+import CarCard from "./CarCard";
+import { useNavigate } from "react-router-dom";
 
 const FeaturedSection = () => {
   const navigate = useNavigate();
@@ -26,7 +26,7 @@ const FeaturedSection = () => {
 
       <button
         onClick={() => {
-          navigate('/cars');
+          navigate("/cars");
           scrollTo(0, 0);
         }}
         className="flex items-center justify-center gap-2 px-6 py-2 border border-bordercolor rounded-md bg-white text-gray-700 hover:bg-gray-50 mt-18 cursor-pointer"
