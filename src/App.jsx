@@ -6,6 +6,7 @@ import CarDetails from './Pages/CarDetails'
 import Cars from './Pages/Cars'
 // import MyBookings from './Pages/MyBookings'
 import Hero from './Components/Hero';
+import Footer from './Components/Footer';
 
 
 const App = () => {
@@ -25,6 +26,8 @@ const App = () => {
         <Route path='/hero'element={<Hero/>}/>
 
       </Routes>
+      {isOwnerpath && <Footer/>}
+<Footer/>
     </>
   );
 };
